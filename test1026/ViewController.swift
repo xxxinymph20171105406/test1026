@@ -28,6 +28,43 @@ class ViewController: UIViewController {
         
     
     }
+    
+    @IBAction func caculaor除法(_ sender: Any) {
+        var x = 0
+        x = Int(clmx.text!)!
+        var y = 0
+        y = Int(clmy.text!)!
+        var z:Int = 0
+        // z = x + y
+        z = x / y
+        clmz.text = "\(z)"
+        
+    }
+    
+    @IBAction func 加法(_ sender: Any) {
+        var x = 0
+        x = Int(clmx.text!)!
+        var y = 0
+        y = Int(clmy.text!)!
+        var z:Int = 0
+        // z = x + y
+        z = x + y
+        clmz.text = "\(z)"
+        
+    }
+    
+    
+    @IBAction func 减法(_ sender: Any) {
+        var x = 0
+        x = Int(clmx.text!)!
+        var y = 0
+        y = Int(clmy.text!)!
+        var z:Int = 0
+        // z = x + y
+        z = x - y
+        clmz.text = "\(z)"
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
